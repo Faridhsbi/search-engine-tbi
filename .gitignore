@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.pyo
+
+venv/
+env/
+.env
+
+.DS_Store
+Thumbs.db
+
+# Abaikan semua isi di folder index kecuali .gitkeep
+index/*
+!index/.gitkeep
+
+# Abaikan semua isi di folder tmp kecuali .gitkeep
+tmp/*
+!tmp/.gitkeep
