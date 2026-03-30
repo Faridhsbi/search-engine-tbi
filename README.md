@@ -39,8 +39,8 @@ A full-featured information retrieval search engine built from scratch in Python
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd TP2
+git clone https://github.com/Faridhsbi/search-engine-tbi.git
+cd search-engine-tbi
 
 # Install dependencies
 pip install -r requirements.txt
