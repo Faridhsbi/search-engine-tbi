@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 search.py
 
@@ -99,24 +98,3 @@ except Exception as e:
     print(f"  [LSI retrieval not available: {e}]")
 
 print(f"\n{'=' * 70}")
-=======
-from bsbi import BSBIIndex
-from compression import VBEPostings
-
-# sebelumnya sudah dilakukan indexing
-# BSBIIndex hanya sebagai abstraksi untuk index tersebut
-BSBI_instance = BSBIIndex(data_dir = 'collection', \
-                          postings_encoding = VBEPostings, \
-                          output_dir = 'index')
-
-queries = ["alkylated with radioactive iodoacetate", \
-           "psychodrama for disturbed children", \
-           "lipid metabolism in toxemia and normal pregnancy"]
-           
-for query in queries:
-    print("Query  : ", query)
-    print("Results:")
-    for (score, doc) in BSBI_instance.retrieve_tfidf(query, k = 10):
-        print(f"{doc:30} {score:>.3f}")
-    print()
->>>>>>> 7d151749ef8991a59ec1cd533ad6929fcdffbf23
